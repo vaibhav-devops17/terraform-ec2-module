@@ -5,11 +5,4 @@ terraform {
             version = "6.9.0"
         }
     }
-
-    backend "s3" {
-        bucket = "bucket-123-321-vaibhav"
-        key = "terraform.tfstate"
-        region = "ap-south-1"
-        use_lockfile = "my-terraform-lock-table-321"
-    }
 }

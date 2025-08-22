@@ -32,7 +32,7 @@ module "prod" {
     HTTPS = 443
     ami_id = "ami-0861f4e788f5069dd"
     instance_type = "t2.micro"
-    instance = 2
+    instance = 1
     app_name = "kanban-todo-app"
     my_env = "prod"
 }
