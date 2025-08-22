@@ -1,9 +1,9 @@
 variable "db_table_name" {
-    default = "my-terraform-lock-table"
+    default = "my-terraform-lock-table-321"
 }
 
 variable "s3_bucket_name" {
-    default = "my-terraform-lock-table"
+    default = "my-terraform-state-bucket-321"
 }
 
 resource "aws_dynamodb_table" "my-state-file-table" {
