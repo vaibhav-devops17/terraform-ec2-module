@@ -14,10 +14,6 @@ variable "HTTPS" {
     type = number
 }
 
-variable "my_key_name" {
-    type = string
-}
-
 variable "ami_id" {
     type = string
 }

@@ -4,7 +4,6 @@ module "dev" {
     SSH = 22
     HTTP = 80
     HTTPS = 443
-    my_key_name = "terra-key"
     ami_id = "ami-02d26659fd82cf299"
     instance_type = "t2.micro"
     instance = 1
@@ -18,7 +17,6 @@ module "stage" {
     SSH = 22
     HTTP = 80
     HTTPS = 443
-    my_key_name = "terra-key"
     ami_id = "ami-02d26659fd82cf299"
     instance_type = "t2.micro"
     instance = 1
@@ -32,7 +30,6 @@ module "prod" {
     SSH = 22
     HTTP = 80
     HTTPS = 443
-    my_key_name = "terra-key"
     ami_id = "ami-0861f4e788f5069dd"
     instance_type = "t2.micro"
     instance = 2
