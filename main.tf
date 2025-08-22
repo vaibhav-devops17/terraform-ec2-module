@@ -9,7 +9,7 @@ module "dev" {
     instance_type = "t2.micro"
     instance = 1
     app_name = "kanban-todo-app"
-    my_env = dev
+    my_env = "dev"
 }
 
 module "stage" {
@@ -23,7 +23,7 @@ module "stage" {
     instance_type = "t2.micro"
     instance = 1
     app_name = "kanban-todo-app"
-    my_env = stage
+    my_env = "stage"
 }
 
 module "prod" {
@@ -37,5 +37,5 @@ module "prod" {
     instance_type = "t2.micro"
     instance = 2
     app_name = "kanban-todo-app"
-    my_env = prod
+    my_env = "prod"
 }
