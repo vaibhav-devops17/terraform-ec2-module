@@ -7,9 +7,9 @@ terraform {
     }
 
     backend "s3" {
-        bucket = "my-terraform-state-bucket-321"
+        bucket = "bucket-123-321-vaibhav"
         key = "terraform.tfstate"
         region = "ap-south-1"
-        dynamodb_table = "my-terraform-lock-table-321"
+        use_lockfile = "my-terraform-lock-table-321"
     }
 }

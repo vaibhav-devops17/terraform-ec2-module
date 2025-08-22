@@ -1,9 +1,7 @@
-variable "db_table_name" {
-    default = "my-terraform-lock-table-321"
-}
+
 
 resource "aws_dynamodb_table" "my-state-file-table" {
-    name = var.db_table_name
+    name = "my-terraform-lock-table-321"
     billing_mode = "PAY_PER_REQUEST"
     hash_key = "LockID"
     attribute {
