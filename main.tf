@@ -1,5 +1,5 @@
 module "dev" {
-    source = "./my-infa-module"
+    source = "./my-infra-module"
     my_security_group_name = "my-terra-infra-sg"
     SSH = 22
     HTTP = 80
@@ -13,7 +13,7 @@ module "dev" {
 }
 
 module "stage" {
-    source = "./my-infa-module"
+    source = "./my-infra-module"
     my_security_group_name = "my-terra-infra-sg"
     SSH = 22
     HTTP = 80
@@ -27,7 +27,7 @@ module "stage" {
 }
 
 module "prod" {
-    source = "./my-infa-module"
+    source = "./my-infra-module"
     my_security_group_name = "my-terra-infra-sg"
     SSH = 22
     HTTP = 80
