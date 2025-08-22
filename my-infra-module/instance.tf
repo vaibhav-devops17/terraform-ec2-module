@@ -6,7 +6,6 @@ resource "aws_instance" "my_instance" {
     vpc_security_group_ids = [ aws_security_group.my_security_group.name ]
 
     tags = {
-        Name = ${var.app_name}-${var.my_env}
-    }
+        Name = "${var.app_name}-${var.my_env}"
     }
 }
