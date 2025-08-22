@@ -13,7 +13,7 @@ module "dev" {
 
 module "stage" {
     source = "./my-infra-module"
-    my_security_group_name = "my-terra-infra-sg-satge"
+    my_security_group_name = "my-terra-infra-sg-stage"
     SSH = 22
     HTTP = 80
     HTTPS = 443
